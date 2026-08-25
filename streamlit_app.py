@@ -498,10 +498,10 @@ st.html(f"""
     </div>
 
     <h1>
-        Python Developer
+        AI/ML Developer
         <br>
         <span class="gradient-text">
-            with Machine Learning & AI
+            with Python
         </span>
     </h1>
 
@@ -563,10 +563,10 @@ st.html(f"""
 <div class="about-card">
 
     <p>
-        I'm <b>Mayur Sawant</b>, an MCA graduate and Python
+        I'm <b>Mayur Sawant</b>, an MCA graduate and AI/ML
         developer interested in building practical applications
         using <b>Python, Data Analytics, Machine Learning
-        and Cybersecurity</b>.
+        and AI</b>.
     </p>
 
     <p>
