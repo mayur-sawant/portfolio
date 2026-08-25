@@ -10,6 +10,17 @@ with open(PROFILE_PATH, "rb") as image_file:
         image_file.read()
     ).decode()
 
+def highlight(text):
+    return f'<span class="highlight">{text}</span>'
+
+
+def highlight_cyan(text):
+    return f'<span class="highlight-cyan">{text}</span>'
+
+
+def highlight_soft(text):
+    return f'<span class="highlight-soft">{text}</span>'
+
 # ============================================================
 # PAGE CONFIG
 # ============================================================
@@ -409,6 +420,33 @@ footer {
     font-size: 13px;
 }
 
+.highlight {
+    color: #c7d2fe;
+    background: rgba(99, 102, 241, 0.16);
+    border: 1px solid rgba(129, 140, 248, 0.22);
+    padding: 2px 7px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.highlight-cyan {
+    color: #a5f3fc;
+    background: rgba(34, 211, 238, 0.10);
+    border: 1px solid rgba(34, 211, 238, 0.20);
+    padding: 2px 7px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.highlight-soft {
+    color: #e2e8f0;
+    background: rgba(148, 163, 184, 0.10);
+    border: 1px solid rgba(148, 163, 184, 0.15);
+    padding: 2px 7px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
 </style>
 """)
 
@@ -469,7 +507,7 @@ st.html(f"""
 
     <p class="hero-subtitle">
         MCA graduate passionate about Python, Data Analytics,
-        Machine Learning and Cybersecurity. I enjoy turning
+        {highlight_soft("Machine Learning and Cybersecurity")}. I enjoy turning
         real-world problems into practical software solutions.
     </p>
 
@@ -509,7 +547,7 @@ with c4:
 # ABOUT
 # ============================================================
 
-st.html("""
+st.html(f"""
 <div class="section">
 
     <div class="section-label">
@@ -545,8 +583,7 @@ st.html("""
 
     <p>
         Currently, I'm focused on strengthening my skills in
-        <b>Python, SQL, Pandas, NumPy, Scikit-Learn,
-        Git and backend development</b>.
+        <b>{highlight("Python, SQL, Pandas, NumPy, Scikit-Learn,Git and AI")}</b>.
     </p>
 
 </div>
