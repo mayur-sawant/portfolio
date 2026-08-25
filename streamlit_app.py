@@ -1,4 +1,14 @@
 import streamlit as st
+from pathlib import Path
+import base64
+
+
+PROFILE_PATH = Path(__file__).parent / "assets" / "profile.jpg"
+
+with open(PROFILE_PATH, "rb") as image_file:
+    profile_image = base64.b64encode(
+        image_file.read()
+    ).decode()
 
 # ============================================================
 # PAGE CONFIG
@@ -438,11 +448,11 @@ PROJECT_LINKS = {
 # HERO
 # ============================================================
 
-st.html("""
+st.html(f"""
 <div class="hero">
     <img
-        src="assets/profile.jpg"
-        class="profile-photo"
+    src="data:image/jpeg;base64,{profile_image}"
+    class="profile-photo"
     >
 
     <div class="hero-badge">
