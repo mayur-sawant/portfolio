@@ -325,6 +325,23 @@ footer {
 }
 
 
+.profile-photo {
+    width: 145px;
+    height: 145px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 3px solid rgba(129,140,248,0.65);
+
+    box-shadow:
+        0 0 0 8px rgba(99,102,241,0.08),
+        0 15px 40px rgba(0,0,0,0.35);
+
+    margin-bottom: 25px;
+}
+
 /* ============================================================
    CONTACT
    ============================================================ */
@@ -423,6 +440,10 @@ PROJECT_LINKS = {
 
 st.html("""
 <div class="hero">
+    <img
+        src="assets/profile.jpg"
+        class="profile-photo"
+    >
 
     <div class="hero-badge">
         👋 Hello, I'm Mayur
