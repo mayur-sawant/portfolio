@@ -481,6 +481,17 @@ PROJECT_LINKS = {
         "https://github.com/YOUR_USERNAME/House-Price-Prediction"
 }
 
+LIVE_PROJECT_LINKS = {
+    "netrat":
+        "",
+    "loan" :
+        "https://loan--predictor.streamlit.app/",
+    "eco" :
+        "",
+    "house" :
+        ""
+}
+
 
 # ============================================================
 # HERO
@@ -636,7 +647,8 @@ projects = [
             "Network Analysis",
             "ML"
         ],
-        "link": PROJECT_LINKS["netrat"]
+        "link": PROJECT_LINKS["netrat"],
+        "live_link": LIVE_PROJECT_LINKS["netrat"]
     },
 
     {
@@ -654,7 +666,8 @@ projects = [
             "Scikit-Learn",
             "Machine Learning"
         ],
-        "link": PROJECT_LINKS["loan"]
+        "link": PROJECT_LINKS["loan"],
+        "live_link": LIVE_PROJECT_LINKS["loan"]
     },
 
     {
@@ -672,7 +685,8 @@ projects = [
             "Image Analysis",
             "IUCN Data"
         ],
-        "link": PROJECT_LINKS["eco"]
+        "link": PROJECT_LINKS["eco"],
+        "live_link": LIVE_PROJECT_LINKS["eco"]
     },
 
     {
@@ -690,7 +704,8 @@ projects = [
             "Scikit-Learn",
             "Regression"
         ],
-        "link": PROJECT_LINKS["house"]
+        "link": PROJECT_LINKS["house"],
+        "live_link": LIVE_PROJECT_LINKS["house"]
     }
 
 ]
@@ -730,10 +745,16 @@ def project_card(project):
     """)
 
     st.link_button(
-        "View Project →",
+        "View Project Code →",
         project["link"],
         use_container_width=True
     )
+
+    st.link_button(
+            "Live Project →",
+            project["live_link"],
+            use_container_width=True
+        )
 
 
 # ============================================================
