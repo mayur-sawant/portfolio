@@ -14,6 +14,6 @@ jobs:
         run: |
           curl -L -sS --fail --max-time 60 \
             -o /dev/null \
-            "https://mayursawant.streamlit.app"
+            "https://mayursawant.streamlit.app/?embed=true"
 
           echo "Streamlit app is reachable."
