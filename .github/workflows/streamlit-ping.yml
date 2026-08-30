@@ -12,23 +12,8 @@ jobs:
     steps:
       - name: Check Streamlit app
         run: |
-          URL="https://mayursawant.streamlit.app"
-
-          echo "Checking: $URL"
-
-          HTTP_STATUS=$(curl \
-            -L \
-            -s \
+          curl -L -sS --fail --max-time 60 \
             -o /dev/null \
-            -w "%{http_code}" \
-            --max-time 60 \
-            "$URL")
+            "https://mayursawant.streamlit.app"
 
-          echo "HTTP status: $HTTP_STATUS"
-
-          if [ "$HTTP_STATUS" -ge 200 ] && [ "$HTTP_STATUS" -lt 400 ]; then
-            echo "Streamlit app is reachable."
-          else
-            echo "Streamlit app returned HTTP $HTTP_STATUS"
-            exit 1
-          fi
+          echo "Streamlit app is reachable."
