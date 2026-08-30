@@ -1,4 +1,3 @@
-cat > .github/workflows/streamlit-ping.yml <<'EOF'
 name: Streamlit App Health Check
 
 on:
@@ -33,4 +32,3 @@ jobs:
             echo "Streamlit app returned HTTP $HTTP_STATUS"
             exit 1
           fi
-EOF
