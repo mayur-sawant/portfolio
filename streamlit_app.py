@@ -483,14 +483,15 @@ PROJECT_LINKS = {
 
 LIVE_PROJECT_LINKS = {
     "netrat":
-        "",
+        "https://netrat.streamlit.app/",
     "loan" :
         "https://loan--predictor.streamlit.app/",
     "eco" :
-        "",
+        "https://eco--tracker.streamlit.app/",
     "house" :
         ""
 }
+
 
 
 # ============================================================
@@ -749,6 +750,8 @@ def project_card(project):
         project["link"],
         use_container_width=True
     )
+
+
 
     st.link_button(
             "Live Project →",
