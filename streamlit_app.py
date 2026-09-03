@@ -457,7 +457,7 @@ footer {
 
 GITHUB_URL = "https://github.com/mayur-sawant"
 
-LINKEDIN_URL = "https://www.linkedin.com/in/YOUR_USERNAME"
+LINKEDIN_URL = "https://www.linkedin.com/in/mayur-sawant-2979931b7/"
 
 EMAIL = "mayursawant565@gmail.com"
 
