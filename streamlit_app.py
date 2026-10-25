@@ -475,10 +475,10 @@ PROJECT_LINKS = {
         "https://github.com/YOUR_USERNAME/Loan-Prediction",
 
     "eco":
-        "https://github.com/YOUR_USERNAME/Eco-Tracker",
+        "https://github.com/mayur-sawant/EcoTracker",
 
     "house":
-        "https://github.com/YOUR_USERNAME/House-Price-Prediction"
+        "https://mayursawant.streamlit.app/"
 }
 
 LIVE_PROJECT_LINKS = {
@@ -518,7 +518,7 @@ st.html(f"""
     </h1>
 
     <p class="hero-subtitle">
-        MCA graduate passionate about Python, Data Analytics,
+        Aspiring AI/ML Developer passionate about Python, Data Analytics,
         {highlight_soft("Machine Learning and Cybersecurity")}. I enjoy turning
         real-world problems into practical software solutions.
     </p>
